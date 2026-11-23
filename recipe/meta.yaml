@@ -26,10 +26,9 @@ requirements:
     - scipy
     - slepc4py
     - petsc4py
-    - matplotlib-base
+    - matplotlib
     - numba
     - multipledispatch
-    - more-itertools
 
 test:
   imports:
