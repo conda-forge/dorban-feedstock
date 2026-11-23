@@ -1,12 +1,13 @@
-{% set version = "0.0.3" %}
+{% set version = "0.1.0" %}
+{% set python_min = "3.12" %}
 
 package:
   name: dorban
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/d/dorban/dorban-{{ version }}.tar.gz
-  sha256: 870354186d0fa2b8590af9793faee600eb3c970a31fcaceb31a83c560bccb57d
+  url: https://files.pythonhosted.org/packages/source/d/dorban/dorban-{{ version }}.tar.gz
+  sha256: a80efcd36c1646e410ebe881d3bbc77969db4a93955151f7f04bb692a6e8c5a2
 
 build:
   noarch: python
@@ -26,7 +27,7 @@ requirements:
     - scipy
     - slepc4py
     - petsc4py
-    - matplotlib-base
+    - matplotlib
     - numba
     - multipledispatch
     - more-itertools
