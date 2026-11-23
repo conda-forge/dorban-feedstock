@@ -30,6 +30,7 @@ requirements:
     - matplotlib
     - numba
     - multipledispatch
+    - more-itertools
 
 test:
   imports:
